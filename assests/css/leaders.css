@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+.wrapper {
+  color: #dc3545;
+}
+
+.wrapper h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.wrapper .navigation {
+  margin-top: 1rem;
+}
+
+.wrapper .navigation .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 5rem;
+}
+
+.wrapper .navigation .navbar li {
+  list-style: none;
+  height: 5rem;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+}
+
+.wrapper .navigation .navbar li a {
+  text-decoration: none;
+  border: 2px solid black;
+  color: #8c1aff;
+  font-weight: bold;
+  font-size: 2.5rem;
+  padding: 0.5rem 3rem;
+  height: 5rem;
+  border-radius: 6.5rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  opacity: 2;
+}
+
+.navbar li a:hover {
+  background-color: #ffc107;
+  color: #000000;
+}
+
+section article .leaders .heading {
+  background-color: #ff9900;
+  color: white;
+  padding: 1rem;
+}
+
+section article .leaders h1, section article .leaders h3 {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 0.4rem;
+}
+
+section article .leaders h3 {
+  font-size: 2.5rem;
+}
+
+section article .leaders .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2.4rem;
+  padding: 4rem;
+  margin: 3rem 2rem;
+  height: auto;
+}
+
+section article .leaders .content .image img {
+  width: 50vw;
+  height: 100%;
+  padding: 1.6rem 2rem 2rem 1rem;
+}
+
+section article .leaders .extra-info {
+  font-size: 2.4rem;
+  padding: 1rem 4rem;
+  margin: 1rem 2rem;
+}
+/*# sourceMappingURL=leaders.css.map */

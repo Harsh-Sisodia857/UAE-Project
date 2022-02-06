@@ -1,0 +1,146 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url(../../Fonts/static/OpenSans/OpenSans-Light.ttf);
+}
+
+::-moz-selection {
+  background: #D6ED17FF;
+  color: #606060FF;
+}
+
+::selection {
+  background: #D6ED17FF;
+  color: #606060FF;
+}
+
+.wrapper::before {
+  content: "";
+  background-image: url("../images/Dubai.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.65;
+}
+
+.wrapper {
+  height: 35rem;
+  color: #dc3545;
+}
+
+.wrapper .navigation {
+  margin-top: 1rem;
+}
+
+.wrapper .navigation .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 5rem;
+}
+
+.wrapper .navigation .navbar li {
+  list-style: none;
+  height: 5rem;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+}
+
+.wrapper .navigation .navbar li a {
+  text-decoration: none;
+  border: 2px solid black;
+  color: #0dcaf0;
+  font-size: 2.5rem;
+  padding: 0.5rem 3rem;
+  height: 5rem;
+  border-radius: 6.5rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.wrapper #info {
+  margin-top: 3rem;
+  padding: 2rem 3rem;
+  font-size: 2rem;
+  opacity: 1;
+  word-spacing: 1rem;
+}
+
+.navbar li a:hover {
+  background-color: #ffc107;
+  color: black;
+}
+
+section::before {
+  content: "";
+  background-image: url("../images/uae-flag.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.50;
+}
+
+section {
+  position: relative;
+  top: 34rem;
+}
+
+.UAE-Info {
+  height: 100%;
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  font-size: 2rem;
+}
+
+.UAE-Info .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 3rem;
+}
+
+.UAE-Info .details-image img {
+  display: inline-block;
+  height: 100%;
+  width: 25rem;
+}
+
+.UAE-Info #info {
+  display: inline-block;
+  padding: 1.5rem 2rem;
+}
+
+.UAE-Info #info h1 {
+  margin-bottom: 1rem;
+}
+/*# sourceMappingURL=style.css.map */

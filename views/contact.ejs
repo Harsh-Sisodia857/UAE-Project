@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%=title%>
+    </title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+  .wrapper::before {
+  content: "";
+  background-image: url("../images/uae6.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.35;
+}
+.wrapper{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    /* border: 2px solid red; */
+}
+    .nav{
+        position: relative;
+    left: 18%;
+    }
+    .center {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50em
+    }
+
+    .navbars {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .nav .navbars li {
+        list-style: none;
+        height: 5rem;
+        text-align: center;
+        padding: 1rem;
+        color: white;
+    }
+
+    .nav .navbars li a {
+        text-decoration: none;
+        border: 2px solid black;
+        color: #8c1aff;
+        font-weight: bold;
+        font-size: 1.5rem;
+        padding: 0.5rem 3rem;
+        height: 5rem;
+        border-radius: 6.5rem;
+        -webkit-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        opacity: 2;
+    }
+
+    .navbars li a:hover {
+        background-color: #ffc107;
+        color: #000000;
+    }
+</style>
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link href="{% static 'style.css' %}" rel="stylesheet" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<body>
+ <div class="wrapper">
+    <div class="nav">
+        <ul class="navbars">
+            <li><a href="leaders">Leaders</a></li>
+            <li><a href="areas">Areas</a></li>
+            <li><a href="universities">Universities</a></li>
+            <li><a href="contact">Contact Us</a></li>
+        </ul>
+    </div>
+    <div>
+        <br>
+        <br>
+
+
+        <div class="card-block">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 text-center">
+                    <h2></h2>
+                </div>
+
+            </div>
+            <div style="margin-left:21%">
+                <h4 style="color:#007bff;font-size:40px;font-weight:600;">Contact Us</h4>
+                <br>
+
+            </div>
+            <div class="row" align="left" style="margin-left:20%">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-3">
+                    <form id="form">
+
+                        <div class="form-group">
+
+                            <input type="text" class="form-control" id="Isminiz" name="Isminiz" placeholder="Name"
+                                tabindex="1" required>
+                        </div>
+
+                        <div class="form-group">
+
+                            <input type="email" class="form-control" id="Email_Adresiniz" name="Email_Adresiniz"
+                                placeholder="E-Mail Address" tabindex="2" required>
+                        </div>
+                        <div class="form-group">
+
+                            <input type="text" class="form-control" id="Telefon_Numaraniz" name="Telefon_Numaraniz"
+                                placeholder="Telephone Number" tabindex="3" required>
+                        </div>
+                        <div class="form-group">
+
+                            <input type="text" class="form-control" id="Konu" name="Konu" placeholder="Topic "
+                                tabindex="4">
+                        </div>
+                        <div class="form-group">
+
+                            <textarea rows="5" cols="50" name="Mesajiniz" class="form-control" id="Mesajiniz"
+                                placeholder="Your Message..." tabindex="5" required></textarea>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" id="button" value="Mesajı Gönder" style="color:white"
+                                class="btn btn-primary">Send</button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <div class="form-group row">
+                    <div align="right" style="margin-left:-90px">
+                        <div class="col-md-8 offset-md-2">
+                            <div align="left">
+
+                                <h4 style="color: black; ">Reach Us Through:</h1>
+                                <p style="color:#808080;"><span class="fa fa-2x fa-phone" style="color:#007bff;font-weight: bold;"> &#160
+                                    </span>91X-XXX-XXXX</p>
+                                <p style="color:#808080" style = "font-weight: bold;"> &#160 &#160 &#160 &#160 &#160 91X-XXX-XXXX</p>
+                                <p style="color:#808080"><span class="fa fa-2x fa-envelope-square"
+                                        style="color:#007bff"></span> &#160 E-mail: <a
+                                        href="#" style = "font-weight: bold;">youremail@gmail.com</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+        </div>
+
+        <script>
+            const btn = document.getElementById('button');
+
+            document.getElementById('form')
+                .addEventListener('submit', function (event) {
+                    event.preventDefault();
+
+                    btn.value = 'Sending...';
+
+                    const serviceID = 'service_17155014';
+                    const templateID = 'template_ahl7ak2';
+
+                    emailjs.sendForm(serviceID, templateID, this)
+                        .then(() => {
+                            btn.value = 'Send Email';
+                            alert('Mesajınız Gönderildi, Teşekkürler!');
+                        }, (err) => {
+                            btn.value = 'Send Email';
+                            alert(JSON.stringify(err));
+                        });
+                });
+        </script>
+
+
+
+
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
+        <script type="text/javascript">
+            emailjs.init('user_Yrsz51izV90OfCEHmiYCJ') // """ EmailJS mail service USER ID."""
+        </script>
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+
+ </div>
+</body>
+
+</html>
